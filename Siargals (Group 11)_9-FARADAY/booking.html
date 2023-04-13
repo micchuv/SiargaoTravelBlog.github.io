@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <title>Siargao Travel Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Itim&family=Lavishly+Yours&family=Montserrat&family=WindSong&family=Cormorant+Garamond&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+<body class="tar">
+    <nav>
+        <div class="nav-name">
+            <a href="explore.html">Siargao</a>
+            </div>
+        <ul>
+            <li><a href="travel website.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Destinations.html">Destinations</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="la.html">Sales</a></li>
+        </ul>
+    </nav>
+   
+    <section class="yaya">
+        <div class="bgg">
+        <div class="booktext">
+            <h1>BOOKING</h1>
+                <h2>Las Palmas Villas and Casitas</h2>
+            </div>
+            <div class="formbox">
+            <form>
+              <div class="cat rat">
+                <label for="checkin-date">Check-in Date</label>
+                <input type="date" id="checkin-date" name="checkin" required>
+              </div>
+              <div class="cat rat">
+                <label for="checkout-date">Check-out Date</label>
+                <input type="date" id="checkout-date" name="checkout" required>
+              </div>
+              <div class="cat">
+                <label for="roomss">Select Room Preference</label>
+                <select id="roomss" name="roomss" required>
+                    <option value="10500">One Bedroom Villa</option>
+                    <option value="8900">Deluxe Double Room with Balcony</option>
+                    <option value="8200">Deluxe Twin Room</option>
+                    <option value="13000">Family Room</option></select>
+                  <div class="cat">
+                      <label for="nights">Nights</label>
+                    <input type="number" id="nights">
+                    </div>
+
+                    <div class="cat">
+                      <label for="Quantity">No. of Rooms</label>
+                    <input type="number" id="Quantity">
+                    </div>
+
+                    <div class="aso" style="display: flex; text-align: center; font-family: 'Poppins';"> 
+                    <h2 style="color:white;">Total: &nbsp;</h2>
+                    <h2 id="one"  style="color:rgb(214, 231, 211); text-align: center;"></h2>
+                  </div>
+                  
+                  <input type="button" value="Calculate" onclick="multiplyBy()"></input>
+                </div>
+                <hr>
+                <div class="cat">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="Norielle Patco" required>
+                </div>
+                <div class="cat">
+                  <label for="email">Your E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="skygumgun@gmail.com" required>
+                </div>
+                <div class="cat">
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="950-317-0785" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <button type="button" onclick="openPopup()" class="btnn">Book</button>
+                <div class="popup" id="popup">
+                  <img src="lolol.png">
+                  <h2>Booking Successful!</h2>
+                  <p>Your Reservation has been successfully submitted. Thank you!</p>
+                  <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                </form>
+                </div>
+                </div>
+                
+                </section>
+                 
+
+<script>
+let hrElement;
+let counter = 100;
+for (let i = 0; i < counter; i++) {
+  hrElement = document.createElement("HR");
+  if (i == counter - 1) {
+    hrElement.className = "thunder";
+  } else {
+    hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+    hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+    hrElement.style.animationDelay = Math.random() * 5 + "s";
+  }
+  document.body.appendChild(hrElement);
+}
+
+console.log(
+  "There are " +
+    document.querySelectorAll("hr").length +
+    " <hr> tags in this project :)"
+);
+
+    function multiplyBy()
+{
+        num1 = document.getElementById("roomss").value;
+        num2 = document.getElementById("nights").value;
+        num3 = document.getElementById("Quantity").value;
+   
+   
+        document.getElementById("one").innerHTML = num1 * num2 * num3;
+}
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+
+</script>
+</body>
+</HTML>

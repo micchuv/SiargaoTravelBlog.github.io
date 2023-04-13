@@ -1,0 +1,161 @@
+
+body{
+  font-family: 'Poppins';
+}
+
+
+.headiu h1{
+  font-size:40px;
+  font-family: 'Poppins';
+  text-align: center;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 20px 0;
+  grid-gap: 22px;
+  }
+  
+  .headiu h1:after,.headiu h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #c49809;
+    background-color:#ffffff;
+  }
+  
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+table {
+    left: 60px;
+    top: -330px;
+    position: relative;
+    border-collapse: collapse;
+}
+
+img {position: absolute;height: 468px;width: 95rem;left: -10px;top: 60px;}
+
+th {
+  border: 1px solid black;
+  padding: 10px;
+  background: #dad6a4;
+  color: white;
+  font-size: 18px;
+}
+
+th.room_type {
+    padding: 20px;
+   background: white;
+    color: black;
+    font-family: 'Poppins';
+}
+
+td {
+  border: 1px solid black;
+    padding: 10px;
+    background:  #f1f1e5;
+    font-family: 'Poppins';
+
+}
+
+.usp {
+  background: #ebeae8;
+}
+
+.hey {
+  background:  #dad6a4;
+  font-family: 'Poppins';
+  color:black;
+}
+
+.tots {
+   background:  #f1efd1;
+   font-weight: bold;
+}
+
+td.ppu {
+    background:  #f8f6d1;
+}
+
+section {position: relative;top: 30rem; margin-right:100px;}
+
+.hell {
+  background: #ececdd;
+}
+
+.dlyellow {
+  background:#f8f6d1;
+}
+
+.dgreen {
+  background: #c5e0b3;
+}
+
+.green {
+  background: #dad6a4;
+}
+
+#result, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #result10, #result11, #result12, #result13, #result14, #result15, 
+#result16, #result17, #result18, #result19, #result20, #result21, #result22, #result23 {
+    position: relative;
+    left: 20px;
+    font-weight: bold;
+}
+
+/*
+input[type="number" i] {
+   border: none; 
+     background: #FCE293; 
+     border-radius:10px ;
+     text-align: center;
+     font-family: 'Lato', sans-serif;
+}
+
+/*
+
+input[type="number" i]:hover {
+   background: white;
+   border-radius:10px ;
+}
+
+input[type="button" i] {
+  border-radius: 10px;
+  border: none;
+  width: 50px;
+}
+*/
+#ress {
+  border-radius: 10px;
+    border: none;
+    width: 98px;
+    font-family: 'Lato', sans-serif;
+
+ }
+
+.ove {
+  background: none;
+      background: none;
+    width: 162px;
+    border-top: 5px solid black;
+    height: 31px;
+    background: #feffff;
+}
+
+.none{
+  background: none;
+}
+
+#secondNumber,#secondNumber1, #secondNumber2, #secondNumber3, #secondNumber4, #secondNumber5, #secondNumber6,#secondNumber7, #secondNumber8, #secondNumber9, #secondNumber10, #secondNumber11, #secondNumber12, #secondNumber13, #secondNumber14, #secondNumber15, #secondNumber16, #secondNumber17, #secondNumber18, #secondNumber19, #secondNumber20, #secondNumber21, #secondNumber22, #secondNumber23{
+  /*background: #FAEDC2;*/
+}
+
+#secondNumber:hover ,#secondNumber1:hover , #secondNumber2:hover , #secondNumber3:hover , #secondNumber4:hover , #secondNumber5:hover , #secondNumber6:hover ,#secondNumber7:hover , #secondNumber8:hover , #secondNumber9:hover , #secondNumber10:hover , #secondNumber11:hover , #secondNumber12:hover , #secondNumber13:hover , #secondNumber14:hover , #secondNumber15:hover , #secondNumber16:hover , #secondNumber17:hover , #secondNumber18:hover , #secondNumber19:hover , #secondNumber20:hover , #secondNumber21:hover , #secondNumber22:hover , #secondNumber23:hover {
+  background: rgb(151, 132, 132);
+}
+
+th.ove {
+    background: rgb(99, 90, 75);
+}
+/*media*/

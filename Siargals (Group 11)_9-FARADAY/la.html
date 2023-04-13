@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="la.css">
+      <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Itim&family=Lavishly+Yours&family=Montserrat&family=WindSong&family=Cormorant+Garamond&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <nav>
+            <div class="nav-name">
+                <a href="explore.html">Siargao</a>
+                </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+                <li><a href="Activities.html">Activities</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="la.html">Sales</a></li>
+            </ul>
+        </nav>
+
+        <div class="headiu">
+            <h1>Las Palmas Villas and Casitas</h1>
+            <h2> Projected Sales for 2023</h2>
+    </div>
+      <section>
+        <div class="tablee">
+          <table>
+            <tr>
+              <th>Rooms</th>
+              <th></th>
+              <th class="hey">Jan-Mar</th>
+              <th class="hi">Apr-Jun</th>
+              <th class="hey">July-Sept</th>
+              <th class="hey">Oct-Dec</th>
+            </tr>
+
+            <tr>
+              <th class="roomm"rowspan="3">One Bedroom Villa</th>
+              <td class="ppu">Price</td>
+              <td class="hell"><input type="number" id="firstNumber" value="10500" min="10500"></td>
+              <td class="hell"><input type="number" id="firstNumber1" value="10500" min="10500"></td>  
+              <td class="hell"><input type="number" id="firstNumber2" value="10500" min="10500"></td>
+              <td class="hell"><input type="number" id="firstNumber3" value="10500" min="10500"></td>  
+
+            </tr>
+
+            <tr>
+              <td class="usp">Projected Rooms Sold</td>
+              <td class="dlyellow"><input type="number" id="secondNumber" value="0"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber1" min="1"></td>  
+              <td class="dlyellow"><input type="number" id="secondNumber2" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber3" min="1"></td>                       
+            </tr>
+
+            <tr>
+              <td class="tots">Total</td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Pesos";><span id="result"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso";><span id="result1"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso";><span id="result2"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso";><span id="result3"></td>                       
+            </tr>
+
+            <tr>
+              <th class="roomm"rowspan="3">Deluxe Double Room with Balcony</th>
+              <td class="ppu">Price</td>
+              <td class="hell"><input type="number" id="firstNumber4" min="8900" value="8900"></td>
+              <td class="hell" class="hell"><input type="number" id="firstNumber5" min="8900" value="8900"></td>  
+              <td class="hell"><input type="number" id="firstNumber6" min="8900" value="8900"></td>
+              <td class="hell"><input type="number" id="firstNumber7" min="8900" value="8900"></td>  
+
+            </tr>
+
+            <tr>
+              <td class="usp">Projected Rooms Sold</td>
+              <td class="dlyellow"><input type="number" id="secondNumber4" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber5" min="1"></td> 
+              <td class="dlyellow"><input type="number" id="secondNumber6" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber7" min="1"></td>                       
+            </tr>
+
+            <tr>
+              <td class="tots">Total</td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result4"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result5"></td>
+              <td  class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result6"></td>
+              <td  class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result7"></td>                       
+            </tr>
+
+            <tr>
+              <th class="roomm"rowspan="3">Deluxe Twin Room</th>
+              <td class="ppu">Price</td>
+              <td class="hell"><input type="number" id="firstNumber8" min="8200" value="8200"></td>
+              <td class="hell"><input type="number" id="firstNumber9" min="8200" value="8200"></td>  
+              <td class="hell"><input type="number" id="firstNumber10" min="8200" value="8200"></td>
+              <td class="hell"><input type="number" id="firstNumber11" min="8200" value="8200"></td>  
+
+            </tr>
+
+            <tr>
+              <td class="usp">Projected Rooms Sold</td>
+              <td class="dlyellow"><input type="number" id="secondNumber8" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber9" min="1"></td>  
+              <td class="dlyellow"><input type="number" id="secondNumber10" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber11" min="1"></td>                       
+            </tr>
+
+            <tr>
+              <td class="tots">Total</td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result8"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result9"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result10"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result11"></td>                       
+            </tr>
+
+            <tr>
+              <th class="roomm"rowspan="3">Family Room</th>
+              <td class="ppu">Price</td>
+              <td class="hell" class="hell" class="hell" class="hell"><input type="number" id="firstNumber12" min="13000" value="13000"></td>
+              <td class="hell" class="hell" class="hell"><input type="number" id="firstNumber13" min="13000" value="13000"></td>  
+              <td class="hell" class="hell"><input type="number" id="firstNumber14" min="13000" value="13000"></td>
+              <td class="hell"><input type="number" id="firstNumber15" min="13000" value="13000"></td>  
+
+            </tr>
+
+            <tr>
+              <td class="usp">Projected Rooms Sold</td>
+              <td class="dlyellow"><input type="number" id="secondNumber12" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber13" min="1"></td> 
+              <td class="dlyellow"><input type="number" id="secondNumber14" min="1"></td>
+              <td class="dlyellow"><input type="number" id="secondNumber15" min="1"></td>                       
+            </tr>
+
+            <tr>
+              <td class="tots">Total</td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result12"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result13"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result14"></td>
+              <td class="dn"><input type="button" onClick="projectedBy()" Value="Peso"/><span id="result15"></td>                       
+            </tr>
+
+        
+            <tr class="gawing_blue">
+              <th class="lol"></th>
+              <th class="haha"><input type="button" id="ress" onclick="projectedBy()" value="TOTAL SALES"></th>
+              <th class="haha"><span id="yay"></span></th>
+              <th class="haha"><span id="yay"></span></th>
+              <th class="haha"><span id="yay"></span></th>
+              <th class="haha"><span id="yay"></span></th>
+            </tr>
+          </table>
+        </div>
+      </section>
+      </div>
+
+    </body>
+
+
+    <script src="la.js"></script>
+
+    </html>
